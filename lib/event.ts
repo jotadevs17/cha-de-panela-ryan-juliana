@@ -14,11 +14,10 @@ export const eventDetails = {
   contactCta: "Fale conosco",
   deadline: "até o dia do evento",
   inviteParagraphs: [
-    "Criamos esse site para compartilhar com vocês os detalhes da organização do nosso chá de casa nova.",
-    "Estamos muito felizes e contamos com a presença de todos para comemorar essa nova fase.",
-    "Pedimos que confirme sua presença preenchendo os dados necessários.",
-    "Para nos presentear, escolha qualquer item da lista desse site.",
-    "Aguardamos vocês!"
+    "Preparamos cada detalhe para que esse encontro seja leve, acolhedor e cheio de significado.",
+    "Vai ser uma alegria reunir pessoas queridas para celebrar nossa casa nova e brindar esse começo com vocês.",
+    "Para nos ajudar na organização, confirme sua presença pelo formulário. E, caso queira nos presentear, a lista abaixo reúne sugestões pensadas para essa nova fase.",
+    "Esperamos vocês com muito carinho!"
   ],
   payment: {
     preferredMethod: "Pix",

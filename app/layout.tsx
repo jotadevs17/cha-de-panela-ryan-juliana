@@ -2,14 +2,16 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
-const previewImage = "/hero-table.png";
+const siteIcon = "/favicon.svg";
+const previewImage = "/hero-table-olive.png";
 const previewImageAlt = "Chá de Casa Nova de Ryan e Juliana";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   icons: {
-    icon: [{ url: previewImage, type: "image/jpeg" }],
-    apple: [{ url: previewImage, type: "image/jpeg" }]
+    icon: [{ url: siteIcon, type: "image/svg+xml" }],
+    shortcut: [{ url: siteIcon, type: "image/svg+xml" }],
+    apple: [{ url: siteIcon, type: "image/svg+xml" }]
   },
   title: "Chá de Casa Nova | Ryan e Juliana",
   description: "Convite, lista de presentes e reservas do Chá de Casa Nova de Ryan e Juliana.",

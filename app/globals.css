@@ -46,8 +46,8 @@ select {
 
 .hero-photo {
   background:
-    linear-gradient(180deg, rgba(47, 56, 29, 0.1), rgba(47, 56, 29, 0.28)),
-    url("/hero-table.png");
+    linear-gradient(180deg, rgba(63, 72, 35, 0.06), rgba(63, 72, 35, 0.18)),
+    url("/hero-table-olive.png");
   background-position: center;
   background-size: cover;
 }
