@@ -321,7 +321,7 @@ export function GiftList({ gifts, loadError }: GiftListProps) {
             <div className="mt-5 rounded-lg bg-blueink-50 p-4 text-sm leading-6 text-graphite">
               <p>
                 Após reservar, use a chave Pix <span className="font-semibold">{eventDetails.payment.pixKey}</span> e envie
-                o comprovante para Ryan ou Juliana.
+                o comprovante para Ryan e Juliana.
               </p>
             </div>
 

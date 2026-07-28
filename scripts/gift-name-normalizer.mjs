@@ -75,6 +75,7 @@ const wordReplacements = {
   suite: "Suíte",
   tabua: "Tábua",
   tábua: "Tábua",
+  tv: "TV",
   utensilios: "Utensílios",
   utensílios: "Utensílios",
   versati: "Versáti",

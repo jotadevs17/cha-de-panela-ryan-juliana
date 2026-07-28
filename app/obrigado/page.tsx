@@ -21,8 +21,8 @@ export default function ThankYouPage({ searchParams }: ThankYouPageProps) {
   const guestsCount = Math.max(1, Number(searchParams?.pessoas ?? 1));
   const isPresence = type === "presenca";
   const whatsappMessage = isPresence
-    ? "Oi, Juliana! Acabei de confirmar minha presença no site do Chá de Panela."
-    : `Oi, Juliana! Reservei o presente "${giftName}" no site do Chá de Panela e vou enviar o comprovante.`;
+    ? "Oi! Acabei de confirmar minha presença no site do chá de casa nova."
+    : `Oi! Reservei o presente "${giftName}" no site do chá de casa nova e vou enviar o comprovante.`;
 
   return (
     <main className="min-h-screen bg-[#f7f8ef]">
@@ -89,7 +89,7 @@ export default function ThankYouPage({ searchParams }: ThankYouPageProps) {
                     Nome: <span className="font-semibold">{eventDetails.payment.recipientName}</span>
                   </p>
                   <p>
-                    Depois, envie o comprovante para Juliana pelo WhatsApp para ela dar baixa no recebimento.
+                    Depois, envie o comprovante pelo WhatsApp para darmos baixa no recebimento.
                   </p>
                 </div>
               </div>
@@ -104,7 +104,7 @@ export default function ThankYouPage({ searchParams }: ThankYouPageProps) {
               className="focus-ring inline-flex items-center justify-center gap-2 rounded-full bg-blueink-700 px-6 py-3 font-semibold text-white transition hover:bg-blueink-800"
             >
               <MessageCircle size={18} />
-              Falar com Juliana
+              {eventDetails.contactCta}
             </a>
             <a
               href="/#presentes"

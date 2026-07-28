@@ -73,7 +73,7 @@ export default async function HomePage() {
               <span className="block whitespace-nowrap">Ryan e Juliana.</span>
             </h1>
             <p className="mt-6 max-w-2xl text-base leading-7 text-graphite sm:text-xl sm:leading-8">
-              Um encontro carinhoso para celebrar essa nova fase e a despedida do Rio antes da mudança para São Paulo.
+              {eventDetails.description}
             </p>
 
             <div className="mt-8 grid gap-3 sm:grid-cols-3">
@@ -113,7 +113,7 @@ export default async function HomePage() {
                 className="focus-ring inline-flex items-center justify-center gap-2 rounded-full bg-blueink-700 px-6 py-3 font-semibold text-white shadow-soft transition hover:bg-blueink-800"
               >
                 <MessageCircle size={19} />
-                Falar com Juliana
+                {eventDetails.contactCta}
               </a>
               <a
                 href="#presentes"
@@ -247,13 +247,13 @@ export default async function HomePage() {
         <div className="mx-auto flex max-w-7xl flex-col gap-3 px-4 text-sm text-pewter sm:px-8 md:flex-row md:items-center md:justify-between lg:px-10">
           <p>Com carinho, Ryan e Juliana.</p>
           <a
-            href={getWhatsappUrl("Oi, Juliana! Tenho uma dúvida sobre o Chá de Panela.")}
+            href={getWhatsappUrl("Oi! Tenho uma dúvida sobre o chá de casa nova.")}
             target="_blank"
             rel="noreferrer"
             className="focus-ring inline-flex w-fit items-center gap-2 rounded-full px-3 py-2 font-semibold text-blueink-700 transition hover:bg-blueink-50"
           >
             <MessageCircle size={17} />
-            {eventDetails.whatsappDisplay}
+            {eventDetails.contactCta}
           </a>
         </div>
       </footer>

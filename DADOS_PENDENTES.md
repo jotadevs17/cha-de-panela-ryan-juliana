@@ -4,12 +4,15 @@ Este projeto já foi criado a partir do modelo do Chá de Panela anterior e já 
 
 Para finalizar sem publicar informação errada, ainda faltam:
 
-- Cor principal desejada
-- WhatsApp de contato, com DDD
-- Lista de presentes nova, em CSV ou planilha
-- Dados de Pix: chave, nome do recebedor e banco
 - Fotos do casal para substituir o placeholder atual
-- Confirmação se data, horário e local serão os mesmos do projeto base
+
+Já foram definidos nesta versão:
+
+- Cor principal em verde oliva
+- WhatsApp de contato: (21) 98162-0736
+- Lista de presentes
+- Dados de Pix
+- Data, horário e endereço do evento
 
 Depois de preencher esses dados, rodar:
 

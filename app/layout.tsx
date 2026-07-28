@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description: "Convite, lista de presentes e reservas do Chá de Panela de Ryan e Juliana.",
   openGraph: {
     title: "Chá de Panela de Ryan e Juliana",
-    description: "Celebre com Ryan e Juliana em 26/09/2026, às 13h.",
+    description: "Celebre com Ryan e Juliana em 11/10/2026, às 12h.",
     type: "website",
     locale: "pt_BR",
     images: [

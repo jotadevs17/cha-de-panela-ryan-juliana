@@ -59,6 +59,12 @@ Popule os presentes e reservas iniciais:
 npm run db:seed
 ```
 
+Para sincronizar a lista de presentes em um banco já publicado sem apagar reservas existentes:
+
+```bash
+npm run db:sync-gifts
+```
+
 Rode o site:
 
 ```bash
@@ -80,6 +86,7 @@ npm run db:seed
 ```
 
 Em produção, rode o seed apenas quando quiser popular ou reiniciar a lista inicial.
+Para atualizar somente os presentes sem remover reservas, use `npm run db:sync-gifts`.
 
 ## Deploy na Vercel
 

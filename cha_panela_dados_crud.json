@@ -14,19 +14,19 @@
   "notices": [
     "Você pode preencher seu nome em mais de uma linha, seguindo o modelo Nome & Sobrenome.",
     "Pedimos, preferencialmente, que o presente seja pago via Pix.",
-    "Chave Pix: a definir. Após o pagamento, por favor, envie o comprovante para Ryan ou Juliana."
+    "Chave Pix: 16472088748. Após o pagamento, por favor, envie o comprovante para Ryan e Juliana."
   ],
   "payment": {
     "preferredMethod": "pix",
-    "pixKeyType": "a definir",
-    "pixKey": "PIX_A_DEFINIR",
-    "recipientName": "NOME_A_DEFINIR",
-    "bank": "BANCO_A_DEFINIR",
-    "receiptInstruction": "Enviar o comprovante para Ryan ou Juliana.",
+    "pixKeyType": "CPF",
+    "pixKey": "16472088748",
+    "recipientName": "Ryan Cavalcanti Barbosa",
+    "bank": "Nubank",
+    "receiptInstruction": "Enviar o comprovante para Ryan e Juliana.",
     "creditCardOption": "Caso a pessoa prefira pagar com cartão de crédito, será disponibilizado um link para compra."
   },
   "deadline": {
-    "display": "05/10"
+    "display": "até o dia do evento"
   },
   "columns": [
     {
@@ -59,12 +59,472 @@
     }
   ],
   "summary": {
-    "totalItems": 0,
+    "totalItems": 51,
     "reservedItems": 0,
-    "availableItems": 0,
+    "availableItems": 51,
     "itemsWithNameButNoPrice": 0,
     "reservedTotalCentsExcludingMissingPrices": 0,
-    "reservedTotalFormattedExcludingMissingPrices": "R$0,00"
+    "reservedTotalFormattedExcludingMissingPrices": "R$ 0,00"
   },
-  "gifts": []
+  "gifts": [
+    {
+      "id": 1,
+      "sheetRow": 2,
+      "giftTitle": "Descanso de Prato + Panela",
+      "priceLabel": "R$ 90,00",
+      "priceCents": 9000,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 2,
+      "sheetRow": 3,
+      "giftTitle": "Kit Cabide",
+      "priceLabel": "R$ 90,00",
+      "priceCents": 9000,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 3,
+      "sheetRow": 4,
+      "giftTitle": "Pote Hermético",
+      "priceLabel": "R$ 90,00",
+      "priceCents": 9000,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 4,
+      "sheetRow": 5,
+      "giftTitle": "Organizador de Geladeira",
+      "priceLabel": "R$ 95,00",
+      "priceCents": 9500,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 5,
+      "sheetRow": 6,
+      "giftTitle": "Tábua de Passar",
+      "priceLabel": "R$ 100,00",
+      "priceCents": 10000,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 6,
+      "sheetRow": 7,
+      "giftTitle": "Porta Utensílios",
+      "priceLabel": "R$ 115,00",
+      "priceCents": 11500,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 7,
+      "sheetRow": 8,
+      "giftTitle": "Utensílios Inox + Silicone",
+      "priceLabel": "R$ 130,00",
+      "priceCents": 13000,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 8,
+      "sheetRow": 9,
+      "giftTitle": "Fruteira de Cerâmica",
+      "priceLabel": "R$ 140,00",
+      "priceCents": 14000,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 9,
+      "sheetRow": 10,
+      "giftTitle": "Passadeira a Vapor",
+      "priceLabel": "R$ 160,00",
+      "priceCents": 16000,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 10,
+      "sheetRow": 11,
+      "giftTitle": "Kit Hermético",
+      "priceLabel": "R$ 140,00",
+      "priceCents": 14000,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 11,
+      "sheetRow": 12,
+      "giftTitle": "Churrasqueira Elétrica",
+      "priceLabel": "R$ 160,00",
+      "priceCents": 16000,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 12,
+      "sheetRow": 13,
+      "giftTitle": "Vaso de Planta",
+      "priceLabel": "R$ 150,00",
+      "priceCents": 15000,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 13,
+      "sheetRow": 14,
+      "giftTitle": "Jogo de Toalhas",
+      "priceLabel": "R$ 150,00",
+      "priceCents": 15000,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 14,
+      "sheetRow": 15,
+      "giftTitle": "Aparelho de Jantar",
+      "priceLabel": "R$ 430,00",
+      "priceCents": 43000,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 15,
+      "sheetRow": 16,
+      "giftTitle": "Conjunto de Travessa",
+      "priceLabel": "R$ 150,00",
+      "priceCents": 15000,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 16,
+      "sheetRow": 17,
+      "giftTitle": "Kit Feijoada",
+      "priceLabel": "R$ 190,00",
+      "priceCents": 19000,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 17,
+      "sheetRow": 18,
+      "giftTitle": "Persiana",
+      "priceLabel": "R$ 160,00",
+      "priceCents": 16000,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 18,
+      "sheetRow": 19,
+      "giftTitle": "Porta Frios + Queijeira + Boleira",
+      "priceLabel": "R$ 160,00",
+      "priceCents": 16000,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 19,
+      "sheetRow": 20,
+      "giftTitle": "Batedeira",
+      "priceLabel": "R$ 120,00",
+      "priceCents": 12000,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 20,
+      "sheetRow": 21,
+      "giftTitle": "Garrafa Térmica",
+      "priceLabel": "R$ 120,00",
+      "priceCents": 12000,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 21,
+      "sheetRow": 22,
+      "giftTitle": "Ajuda com Decoração",
+      "priceLabel": "R$ 200,00",
+      "priceCents": 20000,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 22,
+      "sheetRow": 23,
+      "giftTitle": "Kit Fondue",
+      "priceLabel": "R$ 250,00",
+      "priceCents": 25000,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 23,
+      "sheetRow": 24,
+      "giftTitle": "Espremedor de Frutas",
+      "priceLabel": "R$ 175,00",
+      "priceCents": 17500,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 24,
+      "sheetRow": 25,
+      "giftTitle": "Travesseiros",
+      "priceLabel": "R$ 220,00",
+      "priceCents": 22000,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 25,
+      "sheetRow": 26,
+      "giftTitle": "Cafeteira Automática",
+      "priceLabel": "R$ 285,00",
+      "priceCents": 28500,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 26,
+      "sheetRow": 27,
+      "giftTitle": "Banqueta de Peixe",
+      "priceLabel": "R$ 220,00",
+      "priceCents": 22000,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 27,
+      "sheetRow": 28,
+      "giftTitle": "Jogo de Cama",
+      "priceLabel": "R$ 230,00",
+      "priceCents": 23000,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 28,
+      "sheetRow": 29,
+      "giftTitle": "Tapete Sisal",
+      "priceLabel": "R$ 230,00",
+      "priceCents": 23000,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 29,
+      "sheetRow": 30,
+      "giftTitle": "Edredom",
+      "priceLabel": "R$ 220,00",
+      "priceCents": 22000,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 30,
+      "sheetRow": 31,
+      "giftTitle": "Fechadura Digital",
+      "priceLabel": "R$ 320,00",
+      "priceCents": 32000,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 31,
+      "sheetRow": 32,
+      "giftTitle": "Ventilador de Teto",
+      "priceLabel": "R$ 320,00",
+      "priceCents": 32000,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 32,
+      "sheetRow": 33,
+      "giftTitle": "Aspirador de Pó sem Fio",
+      "priceLabel": "R$ 460,00",
+      "priceCents": 46000,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 33,
+      "sheetRow": 34,
+      "giftTitle": "Purificador de Água",
+      "priceLabel": "R$ 400,00",
+      "priceCents": 40000,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 34,
+      "sheetRow": 35,
+      "giftTitle": "Playground dos Gatos",
+      "priceLabel": "R$ 390,00",
+      "priceCents": 39000,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 35,
+      "sheetRow": 36,
+      "giftTitle": "Multiprocessador",
+      "priceLabel": "R$ 450,00",
+      "priceCents": 45000,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 36,
+      "sheetRow": 37,
+      "giftTitle": "Cooktop",
+      "priceLabel": "R$ 500,00",
+      "priceCents": 50000,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 37,
+      "sheetRow": 38,
+      "giftTitle": "Micro-ondas",
+      "priceLabel": "R$ 600,00",
+      "priceCents": 60000,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 38,
+      "sheetRow": 39,
+      "giftTitle": "Jogo de Janela",
+      "priceLabel": "R$ 750,00",
+      "priceCents": 75000,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 39,
+      "sheetRow": 40,
+      "giftTitle": "Depurador",
+      "priceLabel": "R$ 700,00",
+      "priceCents": 70000,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 40,
+      "sheetRow": 41,
+      "giftTitle": "Robô Aspirador",
+      "priceLabel": "R$ 1.200,00",
+      "priceCents": 120000,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 41,
+      "sheetRow": 42,
+      "giftTitle": "Forno Elétrico",
+      "priceLabel": "R$ 1.400,00",
+      "priceCents": 140000,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 42,
+      "sheetRow": 43,
+      "giftTitle": "Ar Condicionado",
+      "priceLabel": "R$ 1.600,00",
+      "priceCents": 160000,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 43,
+      "sheetRow": 44,
+      "giftTitle": "Smart TV",
+      "priceLabel": "R$ 2.300,00",
+      "priceCents": 230000,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 44,
+      "sheetRow": 45,
+      "giftTitle": "Geladeira",
+      "priceLabel": "R$ 3.600,00",
+      "priceCents": 360000,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 45,
+      "sheetRow": 46,
+      "giftTitle": "Tapete Sala",
+      "priceLabel": "R$ 800,00",
+      "priceCents": 80000,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 46,
+      "sheetRow": 47,
+      "giftTitle": "Cabeceira",
+      "priceLabel": "R$ 750,00",
+      "priceCents": 75000,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 47,
+      "sheetRow": 48,
+      "giftTitle": "Mesa de Cabeceira",
+      "priceLabel": "R$ 600,00",
+      "priceCents": 60000,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 48,
+      "sheetRow": 49,
+      "giftTitle": "Cortina de Linho",
+      "priceLabel": "R$ 250,00",
+      "priceCents": 25000,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 49,
+      "sheetRow": 50,
+      "giftTitle": "Lixeira",
+      "priceLabel": "R$ 90,00",
+      "priceCents": 9000,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 50,
+      "sheetRow": 51,
+      "giftTitle": "Kit Saladeira",
+      "priceLabel": "R$ 130,00",
+      "priceCents": 13000,
+      "guestName": "",
+      "isReserved": false
+    },
+    {
+      "id": 51,
+      "sheetRow": 52,
+      "giftTitle": "Kit Ferramentas",
+      "priceLabel": "R$ 230,00",
+      "priceCents": 23000,
+      "guestName": "",
+      "isReserved": false
+    }
+  ]
 }

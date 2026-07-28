@@ -10,6 +10,7 @@ const __dirname = path.dirname(__filename);
 const rootDir = path.join(__dirname, "..");
 const jsonPath = path.join(rootDir, "cha_panela_dados_crud.json");
 const csvPath = path.join(rootDir, "cha_panela_presentes.csv");
+const args = new Set(process.argv.slice(2));
 
 function parseCsvLine(line) {
   const values = [];
@@ -102,9 +103,12 @@ async function main() {
   const crudData = JSON.parse(fs.readFileSync(jsonPath, "utf8"));
   const csvRows = parseSemicolonCsv(fs.readFileSync(csvPath, "utf8"));
   const giftsById = new Map(crudData.gifts.map((gift) => [String(gift.id), gift]));
+  const upsertOnly = args.has("--upsert-only");
 
-  await prisma.reservation.deleteMany();
-  await prisma.gift.deleteMany();
+  if (!upsertOnly) {
+    await prisma.reservation.deleteMany();
+    await prisma.gift.deleteMany();
+  }
 
   for (const row of csvRows) {
     const jsonGift = giftsById.get(row.id);
@@ -118,14 +122,40 @@ async function main() {
       continue;
     }
 
+    const giftData = {
+      name: title,
+      category: inferCategory(title),
+      priceLabel: toNullableString(row.valor_formatado ?? jsonGift?.priceLabel),
+      priceCents: toNullableInt(row.valor_centavos ?? jsonGift?.priceCents),
+      sheetRow: toNullableInt(row.linha_planilha ?? jsonGift?.sheetRow)
+    };
+
+    if (upsertOnly) {
+      await prisma.gift.upsert({
+        where: {
+          id: giftId
+        },
+        create: {
+          id: giftId,
+          ...giftData,
+          status: isReserved ? GiftStatus.RESERVADO : GiftStatus.DISPONIVEL,
+          reservation: isReserved && guestName
+            ? {
+                create: {
+                  guestName
+                }
+              }
+            : undefined
+        },
+        update: giftData
+      });
+      continue;
+    }
+
     await prisma.gift.create({
       data: {
         id: giftId,
-        name: title,
-        category: inferCategory(title),
-        priceLabel: toNullableString(row.valor_formatado ?? jsonGift?.priceLabel),
-        priceCents: toNullableInt(row.valor_centavos ?? jsonGift?.priceCents),
-        sheetRow: toNullableInt(row.linha_planilha ?? jsonGift?.sheetRow),
+        ...giftData,
         status: isReserved ? GiftStatus.RESERVADO : GiftStatus.DISPONIVEL,
         reservation: isReserved && guestName
           ? {
@@ -149,7 +179,9 @@ async function main() {
   const reserved = await prisma.gift.count({ where: { status: GiftStatus.RESERVADO } });
   const available = total - reserved;
 
-  console.log(`Seed concluido: ${total} presentes, ${available} disponiveis, ${reserved} reservados.`);
+  console.log(
+    `${upsertOnly ? "Sincronizacao" : "Seed"} concluido: ${total} presentes, ${available} disponiveis, ${reserved} reservados.`
+  );
 }
 
 main()

@@ -1,1 +1,52 @@
 id;linha_planilha;opcao_presente;valor_formatado;valor_centavos;nome_sobrenome;preenchido
+1;2;"Descanso de Prato + Panela";"R$ 90,00";9000;;false
+2;3;"Kit Cabide";"R$ 90,00";9000;;false
+3;4;"Pote Hermético";"R$ 90,00";9000;;false
+4;5;"Organizador de Geladeira";"R$ 95,00";9500;;false
+5;6;"Tábua de Passar";"R$ 100,00";10000;;false
+6;7;"Porta Utensílios";"R$ 115,00";11500;;false
+7;8;"Utensílios Inox + Silicone";"R$ 130,00";13000;;false
+8;9;"Fruteira de Cerâmica";"R$ 140,00";14000;;false
+9;10;"Passadeira a Vapor";"R$ 160,00";16000;;false
+10;11;"Kit Hermético";"R$ 140,00";14000;;false
+11;12;"Churrasqueira Elétrica";"R$ 160,00";16000;;false
+12;13;"Vaso de Planta";"R$ 150,00";15000;;false
+13;14;"Jogo de Toalhas";"R$ 150,00";15000;;false
+14;15;"Aparelho de Jantar";"R$ 430,00";43000;;false
+15;16;"Conjunto de Travessa";"R$ 150,00";15000;;false
+16;17;"Kit Feijoada";"R$ 190,00";19000;;false
+17;18;"Persiana";"R$ 160,00";16000;;false
+18;19;"Porta Frios + Queijeira + Boleira";"R$ 160,00";16000;;false
+19;20;"Batedeira";"R$ 120,00";12000;;false
+20;21;"Garrafa Térmica";"R$ 120,00";12000;;false
+21;22;"Ajuda com Decoração";"R$ 200,00";20000;;false
+22;23;"Kit Fondue";"R$ 250,00";25000;;false
+23;24;"Espremedor de Frutas";"R$ 175,00";17500;;false
+24;25;"Travesseiros";"R$ 220,00";22000;;false
+25;26;"Cafeteira Automática";"R$ 285,00";28500;;false
+26;27;"Banqueta de Peixe";"R$ 220,00";22000;;false
+27;28;"Jogo de Cama";"R$ 230,00";23000;;false
+28;29;"Tapete Sisal";"R$ 230,00";23000;;false
+29;30;"Edredom";"R$ 220,00";22000;;false
+30;31;"Fechadura Digital";"R$ 320,00";32000;;false
+31;32;"Ventilador de Teto";"R$ 320,00";32000;;false
+32;33;"Aspirador de Pó sem Fio";"R$ 460,00";46000;;false
+33;34;"Purificador de Água";"R$ 400,00";40000;;false
+34;35;"Playground dos Gatos";"R$ 390,00";39000;;false
+35;36;"Multiprocessador";"R$ 450,00";45000;;false
+36;37;"Cooktop";"R$ 500,00";50000;;false
+37;38;"Micro-ondas";"R$ 600,00";60000;;false
+38;39;"Jogo de Janela";"R$ 750,00";75000;;false
+39;40;"Depurador";"R$ 700,00";70000;;false
+40;41;"Robô Aspirador";"R$ 1.200,00";120000;;false
+41;42;"Forno Elétrico";"R$ 1.400,00";140000;;false
+42;43;"Ar Condicionado";"R$ 1.600,00";160000;;false
+43;44;"Smart TV";"R$ 2.300,00";230000;;false
+44;45;"Geladeira";"R$ 3.600,00";360000;;false
+45;46;"Tapete Sala";"R$ 800,00";80000;;false
+46;47;"Cabeceira";"R$ 750,00";75000;;false
+47;48;"Mesa de Cabeceira";"R$ 600,00";60000;;false
+48;49;"Cortina de Linho";"R$ 250,00";25000;;false
+49;50;"Lixeira";"R$ 90,00";9000;;false
+50;51;"Kit Saladeira";"R$ 130,00";13000;;false
+51;52;"Kit Ferramentas";"R$ 230,00";23000;;false

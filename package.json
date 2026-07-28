@@ -10,6 +10,7 @@
     "db:migrate": "prisma migrate dev",
     "db:deploy": "prisma migrate deploy",
     "db:seed": "prisma db seed",
+    "db:sync-gifts": "prisma db seed -- --upsert-only",
     "data:normalize-gifts": "node scripts/sync-gift-names.mjs --sources",
     "db:normalize-gifts": "node scripts/sync-gift-names.mjs --db",
     "db:studio": "prisma studio"
