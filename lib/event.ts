@@ -1,6 +1,6 @@
 export const eventDetails = {
   couple: "Ryan e Juliana",
-  title: "Chá de Panela de Ryan e Juliana",
+  title: "Chá de Casa Nova de Ryan e Juliana",
   description:
     "Criamos esse site para compartilhar com vocês os detalhes da organização do nosso chá de casa nova. Estamos muito felizes e contamos com a presença de todos para comemorar essa nova fase. Pedimos que confirme sua presença preenchendo os dados necessários. Para nos presentear, escolha qualquer item da lista desse site. Aguardamos vocês!",
   date: "11/10/2026",

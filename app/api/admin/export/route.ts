@@ -291,7 +291,7 @@ function drawGuestRows(chunks: string[], rows: GuestRow[]) {
 
 function drawFooter(chunks: string[], pageNumber: number, totalPages: number) {
   drawLine(chunks, marginX, 802, pageWidth - marginX, 802, "#d9e2c7", 0.6);
-  drawText(chunks, "Lista gerada automaticamente pelo site do Chá de Panela.", marginX, 818, {
+  drawText(chunks, "Lista gerada automaticamente pelo site do Chá de Casa Nova.", marginX, 818, {
     size: 8,
     color: "#68725d"
   });
@@ -409,7 +409,7 @@ export async function GET(request: NextRequest) {
     return new NextResponse(pdf, {
       headers: {
         "Content-Type": "application/pdf",
-        "Content-Disposition": `attachment; filename="lista-convidados-cha-de-panela.pdf"`
+        "Content-Disposition": `attachment; filename="lista-convidados-cha-de-casa-nova.pdf"`
       }
     });
   } catch {

@@ -1,6 +1,6 @@
-# Chá de Panela de Ryan e Juliana
+# Chá de Casa Nova de Ryan e Juliana
 
-Site completo para convite, lista de presentes, reservas e administração do Chá de Panela de Ryan e Juliana.
+Site completo para convite, lista de presentes, reservas e administração do Chá de Casa Nova de Ryan e Juliana.
 
 ## Stack
 

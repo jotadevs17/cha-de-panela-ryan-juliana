@@ -1,10 +1,10 @@
 # Dados pendentes para finalizar o site
 
-Este projeto já foi criado a partir do modelo do Chá de Panela anterior e já está personalizado como base para Ryan e Juliana.
+Este projeto já foi criado a partir do modelo anterior e já está personalizado como Chá de Casa Nova de Ryan e Juliana.
 
 Para finalizar sem publicar informação errada, ainda faltam:
 
-- Fotos do casal para substituir o placeholder atual
+- Revisão final das fotos após publicação, se o casal quiser trocar a ordem do carrossel
 
 Já foram definidos nesta versão:
 

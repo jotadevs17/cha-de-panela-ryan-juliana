@@ -3,7 +3,7 @@ import "./globals.css";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
 const previewImage = "/hero-table.png";
-const previewImageAlt = "Chá de Panela de Ryan e Juliana";
+const previewImageAlt = "Chá de Casa Nova de Ryan e Juliana";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -11,10 +11,10 @@ export const metadata: Metadata = {
     icon: [{ url: previewImage, type: "image/jpeg" }],
     apple: [{ url: previewImage, type: "image/jpeg" }]
   },
-  title: "Chá de Panela | Ryan e Juliana",
-  description: "Convite, lista de presentes e reservas do Chá de Panela de Ryan e Juliana.",
+  title: "Chá de Casa Nova | Ryan e Juliana",
+  description: "Convite, lista de presentes e reservas do Chá de Casa Nova de Ryan e Juliana.",
   openGraph: {
-    title: "Chá de Panela de Ryan e Juliana",
+    title: "Chá de Casa Nova de Ryan e Juliana",
     description: "Celebre com Ryan e Juliana em 11/10/2026, às 12h.",
     type: "website",
     locale: "pt_BR",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Chá de Panela de Ryan e Juliana",
+    title: "Chá de Casa Nova de Ryan e Juliana",
     description: "Convite, lista de presentes e reservas.",
     images: [
       {

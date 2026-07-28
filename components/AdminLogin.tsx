@@ -47,7 +47,7 @@ export function AdminLogin({ configured }: { configured: boolean }) {
           <div className="mb-7 inline-flex h-12 w-12 items-center justify-center rounded-full bg-blueink-50 text-blueink-700">
             <LockKeyhole size={22} />
           </div>
-          <h1 className="text-3xl font-semibold text-blueink-900">Admin do Chá de Panela</h1>
+          <h1 className="text-3xl font-semibold text-blueink-900">Admin do Chá de Casa Nova</h1>
           <p className="mt-3 text-sm leading-6 text-pewter">
             Acesso reservado para gerenciar presentes e reservas.
           </p>

@@ -7,6 +7,6 @@ dist
 coverage
 *.log
 public/og.png
-fotosCarrossel/
+/fotosCarrossel/
 .agents/
 skills-lock.json

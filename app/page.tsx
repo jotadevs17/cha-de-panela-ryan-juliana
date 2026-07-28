@@ -69,7 +69,7 @@ export default async function HomePage() {
               Convite especial
             </p>
             <h1 className="max-w-3xl text-[2rem] font-semibold leading-[1.08] text-blueink-900 min-[390px]:text-[2.375rem] sm:text-[4rem] sm:leading-[1.03]">
-              <span className="block whitespace-nowrap">Chá de Panela</span>
+              <span className="block whitespace-nowrap">Chá de Casa Nova</span>
               <span className="block whitespace-nowrap">Ryan e Juliana.</span>
             </h1>
             <p className="mt-6 max-w-2xl text-base leading-7 text-graphite sm:text-xl sm:leading-8">

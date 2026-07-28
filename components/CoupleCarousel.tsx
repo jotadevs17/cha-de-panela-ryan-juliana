@@ -5,11 +5,20 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useEffect, useRef } from "react";
 
 const photos = [
-  {
-    src: "/hero-table.png",
-    alt: "Chá de Panela de Ryan e Juliana"
-  }
-];
+  "foto-01.jpeg",
+  "foto-02.jpeg",
+  "foto-03.jpeg",
+  "foto-04.jpeg",
+  "foto-05.jpeg",
+  "foto-06.jpeg",
+  "foto-07.jpeg",
+  "foto-08.jpeg",
+  "foto-09.jpeg",
+  "foto-10.jpeg"
+].map((filename, index) => ({
+  src: `/fotosCarrossel/${filename}`,
+  alt: `Ryan e Juliana no Chá de Casa Nova - foto ${index + 1}`
+}));
 
 export function CoupleCarousel() {
   const carouselRef = useRef<HTMLDivElement>(null);

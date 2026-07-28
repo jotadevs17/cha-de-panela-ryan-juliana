@@ -78,7 +78,7 @@ export function RsvpForm() {
             Confirmação de presença
           </p>
           <h2 className="mt-5 text-3xl font-semibold leading-tight sm:text-4xl">
-            Confirme sua presença no Chá de Panela
+            Confirme sua presença no Chá de Casa Nova
           </h2>
           <p className="mt-4 max-w-xl text-base leading-7 text-blueink-50/85 sm:text-lg">
             Sua confirmação ajuda a gente a organizar esse dia com mais carinho e tranquilidade.
