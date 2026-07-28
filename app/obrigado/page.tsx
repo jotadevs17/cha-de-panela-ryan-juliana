@@ -25,7 +25,7 @@ export default function ThankYouPage({ searchParams }: ThankYouPageProps) {
     : `Oi, Juliana! Reservei o presente "${giftName}" no site do Chá de Panela e vou enviar o comprovante.`;
 
   return (
-    <main className="min-h-screen bg-[#f6f8fa]">
+    <main className="min-h-screen bg-[#f7f8ef]">
       <section className="mx-auto flex min-h-screen max-w-5xl flex-col justify-center px-4 py-10 sm:px-8 lg:px-10">
         <a
           href="/"

@@ -30,10 +30,10 @@ export default async function HomePage() {
   const summary = getGiftSummary(gifts);
 
   return (
-    <main className="min-h-screen overflow-hidden bg-[#f6f8fa]">
+    <main className="min-h-screen overflow-hidden bg-[#f7f8ef]">
       <HomeScrollReset />
       <section className="relative bg-blueink-50">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_12%,rgba(95,158,198,0.22),transparent_34%),linear-gradient(135deg,#f8fbfd_0%,#eaf2f7_48%,#f6f8fa_100%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_12%,rgba(143,161,79,0.24),transparent_34%),linear-gradient(135deg,#fcfdf6_0%,#edf1df_48%,#f7f8ef_100%)]" />
         <div className="relative mx-auto grid min-h-[86vh] max-w-7xl gap-8 px-4 pb-12 pt-5 sm:gap-10 sm:px-8 sm:pb-14 sm:pt-6 lg:px-10 xl:grid-cols-[1.05fr_0.95fr]">
           <nav className="col-span-full flex flex-col gap-3 min-[420px]:flex-row min-[420px]:items-center min-[420px]:justify-between">
             <a href="/" className="text-sm font-semibold text-blueink-800">
@@ -207,7 +207,7 @@ export default async function HomePage() {
         </div>
       </section>
 
-      <section id="presentes" className="bg-[#f6f8fa] py-16 sm:py-20">
+      <section id="presentes" className="bg-[#f7f8ef] py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-8 lg:px-10">
           <div className="mb-8 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
             <div>

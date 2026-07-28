@@ -142,7 +142,7 @@ function fillRect(chunks: string[], x: number, top: number, width: number, heigh
   chunks.push(`${rgb(color)} rg ${rectFromTop(x, top, width, height)} f\n`);
 }
 
-function strokeRect(chunks: string[], x: number, top: number, width: number, height: number, color = "#d8e2ec", widthPt = 0.8) {
+function strokeRect(chunks: string[], x: number, top: number, width: number, height: number, color = "#d9e2c7", widthPt = 0.8) {
   chunks.push(`${rgb(color)} RG ${widthPt} w ${rectFromTop(x, top, width, height)} S\n`);
 }
 
@@ -159,17 +159,17 @@ function drawText(
 ) {
   const size = options.size ?? 10;
   const font = options.font ?? "F1";
-  const color = options.color ?? "#1f2937";
+  const color = options.color ?? "#2f3528";
   chunks.push(`BT /${font} ${size} Tf ${rgb(color)} rg ${x} ${yFromTop(top)} Td (${pdfEscape(text)}) Tj ET\n`);
 }
 
-function drawLine(chunks: string[], x1: number, top1: number, x2: number, top2: number, color = "#d8e2ec", widthPt = 0.6) {
+function drawLine(chunks: string[], x1: number, top1: number, x2: number, top2: number, color = "#d9e2c7", widthPt = 0.6) {
   chunks.push(`${rgb(color)} RG ${widthPt} w ${x1} ${yFromTop(top1)} m ${x2} ${yFromTop(top2)} l S\n`);
 }
 
 function drawHeader(chunks: string[], generatedAt: Date, totalGuests: number, pageNumber: number, totalPages: number) {
-  fillRect(chunks, 0, 0, pageWidth, 92, "#1f4d7a");
-  fillRect(chunks, 0, 88, pageWidth, 4, "#86a9c8");
+  fillRect(chunks, 0, 0, pageWidth, 92, "#3e4823");
+  fillRect(chunks, 0, 88, pageWidth, 4, "#aebf78");
 
   drawText(chunks, "Lista de convidados", marginX, 36, {
     size: 23,
@@ -178,7 +178,7 @@ function drawHeader(chunks: string[], generatedAt: Date, totalGuests: number, pa
   });
   drawText(chunks, eventDetails.title, marginX, 61, {
     size: 11,
-    color: "#e9f2fa"
+    color: "#f1f4e7"
   });
   drawText(chunks, `${eventDetails.date} - ${eventDetails.time}`, 424, 38, {
     size: 11,
@@ -187,34 +187,34 @@ function drawHeader(chunks: string[], generatedAt: Date, totalGuests: number, pa
   });
   drawText(chunks, `Página ${pageNumber} de ${totalPages}`, 440, 61, {
     size: 9,
-    color: "#e9f2fa"
+    color: "#f1f4e7"
   });
 
-  fillRect(chunks, marginX, 116, contentWidth, 54, "#f6f8fb");
-  strokeRect(chunks, marginX, 116, contentWidth, 54, "#d7e1ec");
+  fillRect(chunks, marginX, 116, contentWidth, 54, "#f7f8ef");
+  strokeRect(chunks, marginX, 116, contentWidth, 54, "#d9e2c7");
   drawText(chunks, `Evento: ${eventDetails.couple}`, marginX + 14, 136, {
     size: 10,
     font: "F2",
-    color: "#1f4d7a"
+    color: "#4c5928"
   });
   drawText(chunks, `Local: ${eventDetails.place}`, marginX + 14, 153, {
     size: 9,
-    color: "#4b5563"
+    color: "#58614f"
   });
   drawText(chunks, `Total de convidados: ${totalGuests}`, 398, 136, {
     size: 10,
     font: "F2",
-    color: "#1f4d7a"
+    color: "#4c5928"
   });
   drawText(chunks, `Gerado em: ${formatDateTime(generatedAt)}`, 398, 153, {
     size: 8.5,
-    color: "#4b5563"
+    color: "#58614f"
   });
 }
 
 function drawTableHeader(chunks: string[]) {
-  fillRect(chunks, marginX, tableTop, contentWidth, tableHeaderHeight, "#eaf1f7");
-  strokeRect(chunks, marginX, tableTop, contentWidth, tableHeaderHeight, "#cbd9e6");
+  fillRect(chunks, marginX, tableTop, contentWidth, tableHeaderHeight, "#edf1df");
+  strokeRect(chunks, marginX, tableTop, contentWidth, tableHeaderHeight, "#cbd8a8");
   drawLine(chunks, marginX + numberColumnWidth, tableTop, marginX + numberColumnWidth, tableTop + tableHeaderHeight);
   drawLine(
     chunks,
@@ -227,17 +227,17 @@ function drawTableHeader(chunks: string[]) {
   drawText(chunks, "Nº", marginX + 14, tableTop + 17, {
     size: 9,
     font: "F2",
-    color: "#1f4d7a"
+    color: "#4c5928"
   });
   drawText(chunks, "Nome do convidado", marginX + numberColumnWidth + 12, tableTop + 17, {
     size: 9,
     font: "F2",
-    color: "#1f4d7a"
+    color: "#4c5928"
   });
   drawText(chunks, "Entrada", marginX + numberColumnWidth + nameColumnWidth + 18, tableTop + 17, {
     size: 9,
     font: "F2",
-    color: "#1f4d7a"
+    color: "#4c5928"
   });
 }
 
@@ -246,18 +246,18 @@ function drawGuestRows(chunks: string[], rows: GuestRow[]) {
 
   if (rows.length === 0) {
     fillRect(chunks, marginX, cursor, contentWidth, 44, "#ffffff");
-    strokeRect(chunks, marginX, cursor, contentWidth, 44, "#d8e2ec");
+    strokeRect(chunks, marginX, cursor, contentWidth, 44, "#d9e2c7");
     drawText(chunks, "Nenhum convidado confirmado ainda.", marginX + 14, cursor + 27, {
       size: 10,
-      color: "#4b5563"
+      color: "#58614f"
     });
     return;
   }
 
   rows.forEach((row, index) => {
-    const fill = index % 2 === 0 ? "#ffffff" : "#f8fafc";
+    const fill = index % 2 === 0 ? "#ffffff" : "#fbfcf6";
     fillRect(chunks, marginX, cursor, contentWidth, row.height, fill);
-    strokeRect(chunks, marginX, cursor, contentWidth, row.height, "#d8e2ec", 0.5);
+    strokeRect(chunks, marginX, cursor, contentWidth, row.height, "#d9e2c7", 0.5);
     drawLine(chunks, marginX + numberColumnWidth, cursor, marginX + numberColumnWidth, cursor + row.height);
     drawLine(
       chunks,
@@ -270,7 +270,7 @@ function drawGuestRows(chunks: string[], rows: GuestRow[]) {
     drawText(chunks, String(row.number).padStart(2, "0"), marginX + 13, cursor + 21, {
       size: 9.5,
       font: "F2",
-      color: "#1f4d7a"
+      color: "#4c5928"
     });
 
     row.lines.forEach((line, lineIndex) => {
@@ -283,21 +283,21 @@ function drawGuestRows(chunks: string[], rows: GuestRow[]) {
     const checkboxSize = 11;
     const checkboxX = marginX + numberColumnWidth + nameColumnWidth + 37;
     const checkboxTop = cursor + (row.height - checkboxSize) / 2;
-    strokeRect(chunks, checkboxX, checkboxTop, checkboxSize, checkboxSize, "#9fb3c8", 0.9);
+    strokeRect(chunks, checkboxX, checkboxTop, checkboxSize, checkboxSize, "#aebf78", 0.9);
 
     cursor += row.height;
   });
 }
 
 function drawFooter(chunks: string[], pageNumber: number, totalPages: number) {
-  drawLine(chunks, marginX, 802, pageWidth - marginX, 802, "#d8e2ec", 0.6);
+  drawLine(chunks, marginX, 802, pageWidth - marginX, 802, "#d9e2c7", 0.6);
   drawText(chunks, "Lista gerada automaticamente pelo site do Chá de Panela.", marginX, 818, {
     size: 8,
-    color: "#6b7280"
+    color: "#68725d"
   });
   drawText(chunks, `${pageNumber}/${totalPages}`, pageWidth - marginX - 24, 818, {
     size: 8,
-    color: "#6b7280"
+    color: "#68725d"
   });
 }
 

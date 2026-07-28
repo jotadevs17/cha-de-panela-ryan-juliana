@@ -223,7 +223,7 @@ export function AdminPanel({ gifts, rsvps, loadError }: AdminPanelProps) {
   }
 
   return (
-    <main className="min-h-screen bg-[#f6f8fa]">
+    <main className="min-h-screen bg-[#f7f8ef]">
       <header className="border-b border-blueink-100 bg-white">
         <div className="mx-auto flex max-w-7xl flex-col gap-5 px-5 py-6 sm:px-8 lg:flex-row lg:items-center lg:justify-between lg:px-10">
           <div>

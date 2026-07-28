@@ -41,7 +41,7 @@ export function AdminLogin({ configured }: { configured: boolean }) {
   }
 
   return (
-    <main className="min-h-screen bg-[radial-gradient(circle_at_top_left,rgba(95,158,198,0.22),transparent_34%),linear-gradient(135deg,#f8fbfd_0%,#edf4f8_52%,#f6f8fa_100%)] px-5 py-10">
+    <main className="min-h-screen bg-[radial-gradient(circle_at_top_left,rgba(143,161,79,0.24),transparent_34%),linear-gradient(135deg,#fcfdf6_0%,#edf1df_52%,#f7f8ef_100%)] px-5 py-10">
       <div className="mx-auto flex min-h-[calc(100vh-5rem)] max-w-md items-center">
         <section className="w-full rounded-lg border border-blueink-100 bg-white p-6 shadow-soft">
           <div className="mb-7 inline-flex h-12 w-12 items-center justify-center rounded-full bg-blueink-50 text-blueink-700">
