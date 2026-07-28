@@ -1,0 +1,12 @@
+.env
+.env*.local
+.vercel
+.next
+node_modules
+dist
+coverage
+*.log
+public/og.png
+fotosCarrossel/
+.agents/
+skills-lock.json

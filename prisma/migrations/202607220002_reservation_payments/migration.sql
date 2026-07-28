@@ -1,0 +1,4 @@
+ALTER TABLE "reservas"
+  ADD COLUMN "pago_em" TIMESTAMP(3),
+  ADD COLUMN "observacao_pagamento" TEXT,
+  ADD COLUMN "atualizado_em" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP;

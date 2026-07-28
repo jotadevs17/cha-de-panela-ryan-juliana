@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #f6f8fa;
+  color: #29323d;
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+::selection {
+  background: #bed9ea;
+  color: #263d50;
+}
+
+.focus-ring {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.focus-ring:focus-visible {
+  outline-color: #3d82ad;
+}
+
+.hero-photo {
+  background:
+    linear-gradient(180deg, rgba(38, 61, 80, 0.1), rgba(38, 61, 80, 0.26)),
+    url("/hero-table.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.carousel-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #bed9ea transparent;
+}
+
+.carousel-scrollbar::-webkit-scrollbar {
+  height: 8px;
+}
+
+.carousel-scrollbar::-webkit-scrollbar-thumb {
+  background: #bed9ea;
+  border-radius: 999px;
+}
+
+.carousel-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}

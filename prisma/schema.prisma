@@ -1,0 +1,63 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DATABASE_URL_UNPOOLED")
+}
+
+enum GiftStatus {
+  DISPONIVEL @map("disponivel")
+  RESERVADO  @map("reservado")
+}
+
+model Gift {
+  id          Int        @id @default(autoincrement())
+  name        String     @map("nome")
+  category    String?    @map("categoria")
+  description String?    @map("descricao")
+  priceLabel  String?    @map("valor_formatado")
+  priceCents  Int?       @map("valor_centavos")
+  sheetRow    Int?       @unique @map("linha_planilha")
+  status      GiftStatus @default(DISPONIVEL) @map("status")
+  createdAt   DateTime   @default(now()) @map("criado_em")
+  updatedAt   DateTime   @updatedAt @map("atualizado_em")
+
+  reservation Reservation?
+
+  @@index([status])
+  @@index([category])
+  @@map("presentes")
+}
+
+model Reservation {
+  id            Int      @id @default(autoincrement())
+  giftId        Int      @unique @map("presente_id")
+  guestName     String   @map("nome_convidado")
+  guestWhatsapp String?  @map("whatsapp_convidado")
+  message       String?  @map("mensagem")
+  paidAt        DateTime? @map("pago_em")
+  paymentNote   String?  @map("observacao_pagamento")
+  createdAt     DateTime @default(now()) @map("criado_em")
+  updatedAt     DateTime @default(now()) @updatedAt @map("atualizado_em")
+
+  gift Gift @relation(fields: [giftId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+
+  @@map("reservas")
+}
+
+model AttendanceConfirmation {
+  id            Int      @id @default(autoincrement())
+  guestName     String   @map("nome_convidado")
+  guestWhatsapp String?  @unique @map("whatsapp_convidado")
+  attendeeNames String[] @default([]) @map("nomes_confirmados")
+  guestsCount   Int      @default(1) @map("quantidade_pessoas")
+  message       String?  @map("mensagem")
+  createdAt     DateTime @default(now()) @map("criado_em")
+  updatedAt     DateTime @updatedAt @map("atualizado_em")
+
+  @@index([createdAt])
+  @@map("confirmacoes_presenca")
+}

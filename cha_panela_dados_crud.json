@@ -1,0 +1,70 @@
+{
+  "source": {
+    "spreadsheetId": "",
+    "spreadsheetUrl": "",
+    "spreadsheetTitle": "Lista Chá de Panela Ryan e Juliana",
+    "sheetName": "Página1",
+    "exportedAt": "2026-07-28",
+    "readMode": true
+  },
+  "event": {
+    "title": "CHÁ DE PANELA - Ryan e Juliana",
+    "noticeTitle": "AVISOS"
+  },
+  "notices": [
+    "Você pode preencher seu nome em mais de uma linha, seguindo o modelo Nome & Sobrenome.",
+    "Pedimos, preferencialmente, que o presente seja pago via Pix.",
+    "Chave Pix: a definir. Após o pagamento, por favor, envie o comprovante para Ryan ou Juliana."
+  ],
+  "payment": {
+    "preferredMethod": "pix",
+    "pixKeyType": "a definir",
+    "pixKey": "PIX_A_DEFINIR",
+    "recipientName": "NOME_A_DEFINIR",
+    "bank": "BANCO_A_DEFINIR",
+    "receiptInstruction": "Enviar o comprovante para Ryan ou Juliana.",
+    "creditCardOption": "Caso a pessoa prefira pagar com cartão de crédito, será disponibilizado um link para compra."
+  },
+  "deadline": {
+    "display": "05/10"
+  },
+  "columns": [
+    {
+      "key": "id",
+      "label": "ID interno sequencial"
+    },
+    {
+      "key": "sheetRow",
+      "label": "Linha da planilha original"
+    },
+    {
+      "key": "giftTitle",
+      "label": "Opções de presente"
+    },
+    {
+      "key": "priceLabel",
+      "label": "Valor formatado"
+    },
+    {
+      "key": "priceCents",
+      "label": "Valor em centavos"
+    },
+    {
+      "key": "guestName",
+      "label": "Nome & Sobrenome"
+    },
+    {
+      "key": "isReserved",
+      "label": "Indica se já existe nome preenchido"
+    }
+  ],
+  "summary": {
+    "totalItems": 0,
+    "reservedItems": 0,
+    "availableItems": 0,
+    "itemsWithNameButNoPrice": 0,
+    "reservedTotalCentsExcludingMissingPrices": 0,
+    "reservedTotalFormattedExcludingMissingPrices": "R$0,00"
+  },
+  "gifts": []
+}
