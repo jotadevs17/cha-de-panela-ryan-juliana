@@ -9,7 +9,7 @@
     "lint": "next lint",
     "db:migrate": "prisma migrate dev",
     "db:deploy": "prisma migrate deploy",
-    "db:seed": "node scripts/seed.mjs",
+    "db:seed": "prisma db seed",
     "data:normalize-gifts": "node scripts/sync-gift-names.mjs --sources",
     "db:normalize-gifts": "node scripts/sync-gift-names.mjs --db",
     "db:studio": "prisma studio"
